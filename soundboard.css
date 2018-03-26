@@ -1,0 +1,43 @@
+body {
+  background-color: #2b2f30;
+}
+
+#wrapper {
+  margin: 200px auto 200px auto;
+  color: #FFFFFF;
+}
+
+#searchbar {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 6px;
+  border: none;
+  font-size: 17px;
+}
+
+.container {
+  font-size: 20px;
+  font-family: "Anton";
+  margin: auto 200px auto 200px;
+  width: 80%;
+}
+
+ul {
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  padding: 10px;
+  list-style-type: none;
+}
+
+#header {
+  font-size: 50px;
+  font-family: "Anton";
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+}

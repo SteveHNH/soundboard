@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html  ng-app>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Anton');
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.js"></script>
+<link rel="stylesheet" href="soundboard.css" />
+</head>
+<body>
+  <body ng-app>
+    <div id="wrapper">
+      <div id="header">
+        <center>Soundboard</center>
+      </div>
+    <input ng-model="search" id="searchbar" placeholder="Search Sounds..."/>
+    <div class="container" ng-controller="ListCtrl">
+        <ul>
+            <li ng-repeat="sound in sounds | filter:search">
+              {{sound.name}}<br \>
+              <audio controls>
+                <source src="{{sound.loc}}" type="audio/mpeg">
+            </div>
+            </li>
+        </ul>
+    </div>
+  </div>
+</body>
+<script type='text/javascript'>
+function ListCtrl ($scope) {
+    $scope.sounds = [
+        {name: 'NAME_OF_SOUND', loc: 'file:///FILESYSTEM_LOCATION'},
+        {name: 'NAME_OF_SOUND2', loc: 'file:///LOCATION2'}
+    ];
+}
+</script>
+</body>
+</html>
